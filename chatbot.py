@@ -8,7 +8,7 @@ st.set_page_config(page_title=" Llama 3 Chatbot")
 # Replicate Credentials
 with st.sidebar:
     st.title('Llama 3 Chatbot')
-    st.write('This chatbot is intended to assist you with anny queries')
+    st.write('This chatbot is intended to tutor you on general knowledge questions.')
     if 'REPLICATE_API_TOKEN' in st.secrets:
         st.success('API key already provided!', icon='✅')
         replicate_api = st.secrets['REPLICATE_API_TOKEN']
@@ -26,9 +26,6 @@ with st.sidebar:
         llm = 'meta/meta-llama-3-8b-instruct'
     elif selected_model == 'meta-llama-3-8b':
         llm = 'meta/meta-llama-3-8b'
-    # temperature = st.sidebar.slider('temperature', min_value=0.01, max_value=1.0, value=0.1, step=0.01)
-    # top_p = st.sidebar.slider('top_p', min_value=0.01, max_value=1.0, value=0.9, step=0.01)
-    # max_length = st.sidebar.slider('max_length', min_value=32, max_value=128, value=120, step=8)
     temperature = 0.1
     top_p = 0.9
     max_length = 120
