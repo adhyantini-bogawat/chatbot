@@ -1,5 +1,15 @@
 # chatbot
 
+This chatbot has been developed using Streamlit for the web interface and Replicate for API's to interact with Llama3.
+It is a simple chatbot that is intended to tutor you on general knowledge topics by explainig the question you want answered in a clear and concise manner.
+
+You can find a general explanation and a demo of the application here:
+https://youtu.be/yJJfPg_MMMA
+
+## Steps to run the application
+1. Install the necessary requirements needed to run the app by running pip install -r requirements.txt
+2. To run the application, streamlit run chatbot.py
+
 ## Steps to install Ollama locally via Docker
 1. Install Docker Desktop
 2. Put the ollama image
@@ -22,3 +32,5 @@
 
 }'
 Update the model as well as prompt parameters to your model and prompt questions.
+
+
